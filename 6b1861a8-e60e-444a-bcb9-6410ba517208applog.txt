@@ -1,0 +1,4 @@
+vfp9.exe Information: 0 : Logger started.
+log4net: LogManager initialized.
+log4net: Shutdown called on Hierarchy [log4net-default-repository]
+log4net: Shutdown called on Hierarchy [log4net-default-repository]

@@ -2,6 +2,7 @@
 using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,11 @@ namespace Log4VFP
             GlobalContext.Properties["AppStart"] = new MilestoneHelper();
             GlobalContext.Properties["Milestone"] = new MilestoneHelper();
             log4net.Config.XmlConfigurator.Configure(loggerConfigFile);
+            // log4net.Util.LogLog.InternalDebugging = true;
+            // Trace.Listeners.Add(new TextWriterTraceListener("E:\\Haval-IDMS\\IDMS\\Errorlog\\Log4VFP.log"));
+            // Trace.AutoFlush = true;
+            // Trace.TraceInformation("Logger started.");
+            // log4net.Util.LogLog.Debug(typeof(LogManager), "LogManager initialized.");
         }
 
         /// <summary>
